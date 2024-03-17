@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func redisClonePlayground() {
 	redisClone := NewRedisClone()
 
 	redisClone.AddKeyValue("a", "b")
@@ -24,4 +24,26 @@ func main() {
 	} else {
 		fmt.Printf("C Val: %s\n", cVal)
 	}
+}
+
+func listPlayground() {
+	list := NewLinkList()
+
+	// list.Insert(1)
+	// list.Insert(2)
+	// list.Insert(3)
+	// list.Insert(4)
+	// list.Insert(5)
+
+	list.Append(1)
+	list.Append(2)
+	list.Append(3)
+	list.Append(4)
+	list.Append(5)
+	list.Display()
+}
+
+func main() {
+	redisClonePlayground()
+	listPlayground()
 }
